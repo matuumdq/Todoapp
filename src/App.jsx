@@ -54,7 +54,7 @@ function App() {
     
     // Update todo in Firebase
     const toggleComplete = async(todo) => {
-        (toast.success('To do added successfully'))
+        (toast.success('To do finished successfully'))
         await updateDoc(doc(db, 'todos', todo.id), {
             completed: !todo.completed
         })
